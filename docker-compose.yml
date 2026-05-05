@@ -1,0 +1,6 @@
+services:
+  websocket-server:
+    build: .
+    container_name: websocket-server
+    ports:
+      - "8080:8080"

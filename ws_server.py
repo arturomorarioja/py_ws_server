@@ -31,7 +31,7 @@ async def handler(websocket):
 
 
 async def main(port: int):
-    async with websockets.serve(handler, 'localhost', port):
+    async with websockets.serve(handler, '0.0.0.0', port):
         print(f'WebSocket server running on ws://localhost:{port}')
         try:
             await asyncio.Future()  # wait forever
